@@ -26,7 +26,7 @@
     <form:form action="/admin/users/addPer" method="post" commandName="user" role="form">
         <div class="form-group">
             <label for="firstName">ID:</label>
-            <input type="text" class="form-control" id="idnum" name="idnum" placeholder="Enter Nickname:"/>
+            <input type="text" class="form-control" id="idnum" name="id" placeholder="EnterID:"/>
         </div>
         <div class="form-group">
             <label for="firstName">Nickname:</label>
