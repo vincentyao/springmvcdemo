@@ -26,8 +26,8 @@
 
     <form:form action="/admin/users/updateP" method="post" commandName="userP" role="form">
         <div class="form-group">
-            <label for="firstName">Nickname:</label>
-            <input type="text" class="form-control" id="idv" name="id" placeholder="Enter ID:"
+            <label for="firstName">ID:</label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID:"
                    value="${user.id}"/>
         </div>
         <div class="form-group">
@@ -51,7 +51,8 @@
                    value="${user.password}"/>
         </div>
         <!-- 把 id 一并写入 userP 中 -->
-        <input type="hidden" id="id" name="id" value="${user.id}"/>
+        <input type="text" id="id" name="id" value="${user.id}"/>
+
 
         <div class="form-group">
             <button type="submit" class="btn btn-sm btn-success">提交</button>
