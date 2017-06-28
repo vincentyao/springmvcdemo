@@ -26,11 +26,6 @@
 
     <form:form action="/admin/users/updateP" method="post" commandName="userP" role="form">
         <div class="form-group">
-            <label for="firstName">ID:</label>
-            <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID:"
-                   value="${user.id}"/>
-        </div>
-        <div class="form-group">
             <label for="firstName">Nickname:</label>
             <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter Nickname:"
                    value="${user.nickname}"/>

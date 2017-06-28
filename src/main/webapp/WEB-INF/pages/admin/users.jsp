@@ -29,7 +29,7 @@
     <!-- 如果用户列表为空 -->
     <c:if test="${empty userList}">
         <div class="alert alert-warning" role="alert">
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>User表为空，请<a href="/admin/users/add" type="button" class="btn btn-primary btn-sm">添加</a>
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>User表为空，请  <a href="/admin/users/add" type="button" class="btn btn-primary btn-sm">添加</a>
         </div>
     </c:if>
 
