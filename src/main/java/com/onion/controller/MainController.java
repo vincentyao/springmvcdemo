@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import java.util.List;
 
 /**
@@ -88,11 +89,9 @@ public class MainController {
     // 更新用户信息 操作
     @RequestMapping(value = "/admin/users/updateP", method = RequestMethod.POST)
     public String updateUserPost(@ModelAttribute("userP") UserEntity user) {
-        System.out.print("===================first:"+user.getId());
         // 更新用户信息
-        userRepository.updateUser( user.getNickname(),user.getFirstName(),
+        userRepository.updateUser(user.getNickname(), user.getFirstName(),
                 user.getLastName(), user.getPassword(), user.getId());
-        System.out.print(user.getId());
         userRepository.flush(); // 刷新缓冲区
         return "redirect:/admin/users";
     }
